@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><p>Create cinematic BGMI images and edits using ready-made AI prompts. Free and easy to use.</p>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BGMI AI Prompt Hub</title>
@@ -151,6 +151,9 @@
 </main>
 
 <footer>
+<p style="font-size:12px; color:#94a3b8;">
+  This website provides AI prompts only. We are not affiliated with BGMI or Krafton.
+
   <p>
     <a href="about.html">About</a> |
     <a href="privacy-policy.html">Privacy Policy</a> |
