@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BGMI AI Prompt Hub</title>
+
+  <!-- Google AdSense (replace with your real ID after approval) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXX"
+    crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+    header {
+      background: #020617;
+      padding: 16px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+      color: #38bdf8;
+    }
+    header p {
+      margin-top: 6px;
+      font-size: 14px;
+      color: #cbd5f5;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 16px;
+    }
+    .card {
+      background: #020617;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    h2 {
+      margin-top: 0;
+      color: #7dd3fc;
+    }
+    textarea {
+      width: 100%;
+      min-height: 130px;
+      background: #020617;
+      color: #e5e7eb;
+      border: 1px solid #334155;
+      border-radius: 6px;
+      padding: 10px;
+      resize: vertical;
+    }
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      background: #020617;
+      color: #e5e7eb;
+      border: 1px solid #334155;
+      border-radius: 6px;
+    }
+    button {
+      margin-top: 10px;
+      background: #38bdf8;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0ea5e9;
+    }
+    .prompt-box {
+      background: #020617;
+      border: 1px dashed #334155;
+      padding: 12px;
+      border-radius: 6px;
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #cbd5f5;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      padding: 16px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>BGMI AI Prompt Generator</h1>
+  <p>Free BGMI prompts for AI image generation and editing</p>
+</header>
+
+<main>
+
+  <!-- Ad Section -->
+  <div class="card">
+    <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-XXXXXXXX"
+      data-ad-slot="1234567890"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Image Generation Prompt -->
+  <div class="card">
+    <h2>BGMI Image Generation Prompt</h2>
+
+    <select onchange="setGenPrompt(this.value)">
+      <option value="">Select Style</option>
+      <option value="cinematic">Cinematic Character</option>
+      <option value="profile">Profile Picture</option>
+      <option value="poster">YouTube Poster</option>
+    </select>
+
+    <textarea id="genPrompt">High-detail BGMI character, cinematic lighting, ultra-realistic textures, dramatic battlefield background, 4K quality</textarea>
+    <button onclick="copyPrompt('genPrompt')">Copy Prompt</button>
+
+    <div class="prompt-box">
+      Use this prompt in ChatGPT, Midjourney, Leonardo AI, Firefly, or any image AI tool.
+    </div>
+  </div>
+
+  <!-- Image Editing Prompt -->
+  <div class="card">
+    <h2>BGMI Image Editing Prompt</h2>
+    <textarea id="editPrompt">Keep face 100% same, no face swap, no beautification, enhance lighting, cinematic BGMI background, realistic shadows, ultra HD</textarea>
+    <button onclick="copyPrompt('editPrompt')">Copy Prompt</button>
+
+    <div class="prompt-box">
+      Best for face lock edits, profile photos, thumbnails, and reels.
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 BGMI AI Prompt Hub | Made for gamers
+</footer>
+
+<script>
+  function copyPrompt(id) {
+    const text = document.getElementById(id);
+    text.select();
+    text.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(text.value);
+    alert("Prompt copied!");
+  }
+
+  function setGenPrompt(type) {
+    const box = document.getElementById("genPrompt");
+    if (type === "cinematic") {
+      box.value = "Ultra-realistic BGMI male character, cinematic orange-blue lighting, smoke, sparks, dramatic battlefield, shallow depth of field, 4K, highly detailed";
+    }
+    if (type === "profile") {
+      box.value = "BGMI character portrait, clean dark background, sharp focus, professional gaming profile picture, realistic skin texture, ultra HD";
+    }
+    if (type === "poster") {
+      box.value = "Epic BGMI poster style image, dynamic action pose, motion blur, explosive background, cinematic color grading, YouTube thumbnail quality";
+    }
+  }
+</script>
+
+</body>
+</html>
